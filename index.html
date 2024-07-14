@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Layout</title>
+ <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="warning">برجاء المحاولة مع شاشة كبيره الحجم شكرا 😊</div>
+    <div class="holder">
+
+      <div class="container">
+        <div class="red">One 1</div>
+        <div class="orange">Two 2</div>
+        <div class="yellow">Three 3</div>
+        <div class="green">Four 4</div>
+        <div class="blue">Five 5</div>
+        <div class="indigo">six 6</div>
+        <div class="purple">Seven 7</div>
+      </div>
+
+      <div style="display: flex; gap: 2em; justify-content: space-between;">
+        <div>
+          <label for="justify-content">Justify Content:</label>
+          <select id="justify-content">
+            <option value="flex-start">Flex Start</option>
+            <option value="flex-end">Flex End</option>
+            <option value="center">Center</option>
+            <option value="space-between">Space Between</option>
+            <option value="space-around">Space Around</option>
+            <option value="space-evenly">Space Evenly</option>
+          </select>
+        </div>
+        <div>
+          <label for="flex-wrap">Flex Wrap:</label>
+          <select id="flex-wrap">
+            <option value="nowrap">No Wrap</option>
+            <option value="wrap">Wrap</option>
+            <option value="wrap-reverse">Wrap Reverse</option>
+          </select>
+        </div>
+        <div>
+          <label for="align-items">Align Items:</label>
+          <select id="align-items">
+            <option value="flex-start">Flex Start</option>
+            <option value="flex-end">Flex End</option>
+        <option value="center">Center</option>
+        <option value="baseline">Baseline</option>
+        <option value="stretch">Stretch</option>
+      </select>
+    </div>
+    <div>
+      <label for="align-content">Align Content:</label>
+      <select id="align-content">
+        <option value="flex-start">Flex Start</option>
+        <option value="flex-end">Flex End</option>
+        <option value="center">Center</option>
+        <option value="space-between">Space Between</option>
+        <option value="space-around">Space Around</option>
+        <option value="space-evenly">Space Evenly</option>
+        <option value="stretch">Stretch</option>
+      </select>
+    </div>
+  </div>
+  <footer >
+    <span style="font-size: 0.7rem;">  
+      &copy; hima
+    </span> 
+    <div dir="rtl" style="color: red;">
+      لاحظ align-content مش بتشتغل غير لما تكون خاصية ال flex-wrap متفعلة  والعكس ل align-items
+    </div>
+  </footer>
+</div>
+</body>
+<script src="./src/script.js">
+</script>
+</html>
